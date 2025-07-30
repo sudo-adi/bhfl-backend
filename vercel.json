@@ -1,12 +1,12 @@
 {
   "version": 2,
   "name": "bfhl-api",
-  "builds": [
-    {
-      "src": "dist/server.js",
-      "use": "@vercel/node"
+  "functions": {
+    "dist/server.js": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 10
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
@@ -19,10 +19,5 @@
     "USER_BIRTH_DATE": "15081999",
     "USER_EMAIL": "sudo.aditya@gmail.com",
     "USER_ROLL_NUMBER": "Aditya@183"
-  },
-  "functions": {
-    "dist/server.js": {
-      "maxDuration": 10
-    }
   }
 }
