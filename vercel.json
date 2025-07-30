@@ -3,7 +3,7 @@
   "name": "bfhl-api",
   "functions": {
     "dist/server.js": {
-      "runtime": "nodejs18.x",
+      "runtime": "nodejs20.18.2",
       "maxDuration": 10
     }
   },
@@ -14,10 +14,6 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "USER_FULL_NAME": "aditya_prasad",
-    "USER_BIRTH_DATE": "15081999",
-    "USER_EMAIL": "sudo.aditya@gmail.com",
-    "USER_ROLL_NUMBER": "Aditya@183"
+    "NODE_ENV": "production"
   }
 }
